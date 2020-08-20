@@ -1,0 +1,4 @@
+Addding more residual blocks will increase the runtime for training the model, as there are
+more parameters to learn in the network. Theoretically, the more parameters in the network
+the better the output will be. In practice, after a certain threshold many parameters 
+become redundant (don't add anything to the weights) + the network may overfit the data.

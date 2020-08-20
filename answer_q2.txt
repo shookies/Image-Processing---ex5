@@ -1,0 +1,6 @@
+In order to repurpose the code we built to estimate higher resolution of images,
+we would have to change certain key points in our training. Firstly, our corruption_func
+can simply be a subsampling function (e.g. the function that we used in ex3 to reduce an
+image resolution). Thus our training data would be pairs of (x,y)'s, where x is  the 
+reduced resolution image, and y is it's higher-res counterpart (original).
+The restore_image function would remain mostly the same.
